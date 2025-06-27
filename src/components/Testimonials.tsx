@@ -1,4 +1,3 @@
-
 const Testimonials = () => {
   const testimonials = [
     {
@@ -76,23 +75,23 @@ const Testimonials = () => {
         />
         <div>
           <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-          <p className="text-sm text-rose-500">{testimonial.procedure}</p>
+          <p className="text-sm text-gold-600">{testimonial.procedure}</p>
         </div>
       </div>
     </div>
   );
 
   return (
-    <section className="py-20 gradient-rose">
+    <section className="py-20 gradient-gray">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
-          <span className="text-rose-500 font-semibold text-sm uppercase tracking-wide">
+          <span className="text-gold-600 font-semibold text-sm uppercase tracking-wide">
             Depoimentos
           </span>
           <h2 className="text-3xl md:text-4xl font-elegante font-bold text-gray-800 mt-2 mb-4">
             O que dizem nossas pacientes
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-rose-500 to-gold-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-gold-500 to-gold-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             A satisfação das nossas pacientes é nossa maior recompensa. Veja alguns depoimentos reais.
           </p>
@@ -138,7 +137,7 @@ const Testimonials = () => {
               href="https://g.page/r/SEU_LINK_GOOGLE_REVIEWS"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-rose-500 hover:text-rose-600 font-semibold inline-flex items-center"
+              className="text-gold-600 hover:text-gold-700 font-semibold inline-flex items-center"
             >
               Ver todas as avaliações
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -157,7 +156,7 @@ const Testimonials = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                <button className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center hover:bg-rose-600 transition-colors">
+                <button className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center hover:bg-gold-600 transition-colors">
                   <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
                   </svg>
@@ -171,7 +170,7 @@ const Testimonials = () => {
             
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                <button className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center hover:bg-rose-600 transition-colors">
+                <button className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center hover:bg-gold-600 transition-colors">
                   <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
                   </svg>

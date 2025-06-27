@@ -1,4 +1,3 @@
-
 const Procedures = () => {
   const harmonizacaoFacial = [
     { name: "Preenchimento Labial", desc: "Lábios mais volumosos e definidos", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80" },
@@ -45,7 +44,7 @@ const Procedures = () => {
           href={`https://wa.me/5511999999999?text=Olá, gostaria de saber mais sobre ${procedure.name}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center text-rose-500 hover:text-rose-600 font-semibold text-sm transition-colors"
+          className="inline-flex items-center text-gold-600 hover:text-gold-700 font-semibold text-sm transition-colors"
         >
           Saiba mais
           <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,16 +56,16 @@ const Procedures = () => {
   );
 
   return (
-    <section id="procedimentos" className="py-20 bg-gray-50">
+    <section id="procedimentos" className="py-20 gradient-gray">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
-          <span className="text-rose-500 font-semibold text-sm uppercase tracking-wide">
+          <span className="text-gold-600 font-semibold text-sm uppercase tracking-wide">
             Nossos Tratamentos
           </span>
           <h2 className="text-3xl md:text-4xl font-elegante font-bold text-gray-800 mt-2 mb-4">
             Procedimentos Estéticos
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-rose-500 to-gold-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-gold-500 to-gold-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Oferecemos uma ampla gama de procedimentos estéticos e cirúrgicos, sempre com foco em resultados naturais e harmoniosos.
           </p>
@@ -110,18 +109,18 @@ const Procedures = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16 animate-on-scroll">
-          <div className="bg-gradient-to-r from-rose-500 to-rose-600 text-white p-8 rounded-3xl max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-gold-500 to-gold-600 text-white p-8 rounded-3xl max-w-4xl mx-auto">
             <h3 className="text-2xl font-elegante font-bold mb-4">
               Não encontrou o procedimento que procura?
             </h3>
-            <p className="text-rose-100 mb-6">
+            <p className="text-gold-100 mb-6">
               Entre em contato conosco para uma consulta personalizada e descubra qual o melhor tratamento para você.
             </p>
             <a 
               href="https://wa.me/5511999999999?text=Olá, gostaria de uma consulta personalizada"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-rose-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold inline-flex items-center"
+              className="bg-white text-gold-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold inline-flex items-center"
             >
               💬 Falar com Especialista
             </a>

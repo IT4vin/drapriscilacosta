@@ -28,7 +28,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-rose-400 to-gold-400 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">PC</span>
             </div>
             <div>
@@ -43,31 +43,31 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('inicio')}
-              className="text-gray-700 hover:text-rose-500 transition-colors font-medium"
+              className="text-gray-700 hover:text-gold-600 transition-colors font-medium"
             >
               Início
             </button>
             <button 
               onClick={() => scrollToSection('sobre')}
-              className="text-gray-700 hover:text-rose-500 transition-colors font-medium"
+              className="text-gray-700 hover:text-gold-600 transition-colors font-medium"
             >
               Sobre
             </button>
             <button 
               onClick={() => scrollToSection('procedimentos')}
-              className="text-gray-700 hover:text-rose-500 transition-colors font-medium"
+              className="text-gray-700 hover:text-gold-600 transition-colors font-medium"
             >
               Procedimentos
             </button>
             <button 
               onClick={() => scrollToSection('resultados')}
-              className="text-gray-700 hover:text-rose-500 transition-colors font-medium"
+              className="text-gray-700 hover:text-gold-600 transition-colors font-medium"
             >
               Resultados
             </button>
             <button 
               onClick={() => scrollToSection('contato')}
-              className="text-gray-700 hover:text-rose-500 transition-colors font-medium"
+              className="text-gray-700 hover:text-gold-600 transition-colors font-medium"
             >
               Contato
             </button>
@@ -75,7 +75,7 @@ const Header = () => {
               href="https://wa.me/5511999999999?text=Olá, gostaria de agendar uma avaliação"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-rose-500 to-rose-600 text-white px-6 py-2 rounded-full hover:from-rose-600 hover:to-rose-700 transition-all duration-300 font-medium"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2 rounded-full hover:from-gold-600 hover:to-gold-700 transition-all duration-300 font-medium"
             >
               Agendar Avaliação
             </a>
@@ -104,31 +104,31 @@ const Header = () => {
             <div className="flex flex-col space-y-4 pt-4">
               <button 
                 onClick={() => scrollToSection('inicio')}
-                className="text-gray-700 hover:text-rose-500 transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-gold-600 transition-colors font-medium text-left"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')}
-                className="text-gray-700 hover:text-rose-500 transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-gold-600 transition-colors font-medium text-left"
               >
                 Sobre
               </button>
               <button 
                 onClick={() => scrollToSection('procedimentos')}
-                className="text-gray-700 hover:text-rose-500 transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-gold-600 transition-colors font-medium text-left"
               >
                 Procedimentos
               </button>
               <button 
                 onClick={() => scrollToSection('resultados')}
-                className="text-gray-700 hover:text-rose-500 transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-gold-600 transition-colors font-medium text-left"
               >
                 Resultados
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className="text-gray-700 hover:text-rose-500 transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-gold-600 transition-colors font-medium text-left"
               >
                 Contato
               </button>
@@ -136,7 +136,7 @@ const Header = () => {
                 href="https://wa.me/5511999999999?text=Olá, gostaria de agendar uma avaliação"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-rose-500 to-rose-600 text-white px-6 py-3 rounded-full hover:from-rose-600 hover:to-rose-700 transition-all duration-300 font-medium text-center"
+                className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-3 rounded-full hover:from-gold-600 hover:to-gold-700 transition-all duration-300 font-medium text-center"
               >
                 Agendar Avaliação
               </a>

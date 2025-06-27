@@ -1,10 +1,10 @@
 
 const Hero = () => {
   return (
-    <section id="inicio" className="min-h-screen flex items-center gradient-rose relative overflow-hidden">
+    <section id="inicio" className="min-h-screen flex items-center gradient-gray relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-20 right-10 w-32 h-32 bg-rose-200/30 rounded-full blur-xl"></div>
-      <div className="absolute bottom-20 left-10 w-24 h-24 bg-gold-200/30 rounded-full blur-xl"></div>
+      <div className="absolute top-20 right-10 w-32 h-32 bg-gold-200/30 rounded-full blur-xl"></div>
+      <div className="absolute bottom-20 left-10 w-24 h-24 bg-neutral-200/30 rounded-full blur-xl"></div>
       
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -25,14 +25,14 @@ const Hero = () => {
                 href="https://wa.me/5511999999999?text=Olá, gostaria de agendar minha avaliação gratuita"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-rose-500 to-rose-600 text-white px-8 py-4 rounded-full hover:from-rose-600 hover:to-rose-700 transition-all duration-300 font-semibold text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-8 py-4 rounded-full hover:from-gold-600 hover:to-gold-700 transition-all duration-300 font-semibold text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 📅 Avaliação Gratuita
               </a>
               
               <button 
                 onClick={() => document.getElementById('procedimentos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-rose-500 text-rose-600 px-8 py-4 rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 font-semibold"
+                className="border-2 border-gold-500 text-gold-600 px-8 py-4 rounded-full hover:bg-gold-500 hover:text-white transition-all duration-300 font-semibold"
               >
                 Ver Procedimentos
               </button>
@@ -41,15 +41,15 @@ const Hero = () => {
             {/* Trust indicators */}
             <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-rose-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-gold-500 rounded-full"></div>
                 <span>+1000 procedimentos realizados</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-gold-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-neutral-500 rounded-full"></div>
                 <span>Especialista certificada</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-rose-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-gold-500 rounded-full"></div>
                 <span>Resultados naturais</span>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Image */}
           <div className="animate-slide-in">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-rose-400/20 to-gold-400/20 rounded-3xl transform rotate-6"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-gold-400/20 to-neutral-400/20 rounded-3xl transform rotate-6"></div>
               <img 
                 src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80"
                 alt="Dra. Priscila Costa"

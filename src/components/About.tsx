@@ -24,13 +24,13 @@ const About = () => {
           {/* Content */}
           <div className="animate-on-scroll">
             <div className="mb-6">
-              <span className="text-rose-500 font-semibold text-sm uppercase tracking-wide">
+              <span className="text-gold-600 font-semibold text-sm uppercase tracking-wide">
                 Sobre a Profissional
               </span>
               <h2 className="text-3xl md:text-4xl font-elegante font-bold text-gray-800 mt-2 mb-4">
                 Dra. Priscila Costa
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-rose-500 to-gold-500"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-gold-500 to-gold-600"></div>
             </div>
 
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -40,7 +40,7 @@ const About = () => {
 
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-rose-500 rounded-full mt-2"></div>
+                <div className="w-2 h-2 bg-gold-500 rounded-full mt-2"></div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Formação Médica Sólida</h4>
                   <p className="text-gray-600">Graduada em Medicina pela Universidade Federal, com especialização em Dermatologia e Estética.</p>
@@ -48,7 +48,7 @@ const About = () => {
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-gold-500 rounded-full mt-2"></div>
+                <div className="w-2 h-2 bg-neutral-500 rounded-full mt-2"></div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Certificações Internacionais</h4>
                   <p className="text-gray-600">Cursos avançados em harmonização facial nos principais centros de excelência mundial.</p>
@@ -56,7 +56,7 @@ const About = () => {
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-rose-500 rounded-full mt-2"></div>
+                <div className="w-2 h-2 bg-gold-500 rounded-full mt-2"></div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Resultados Naturais</h4>
                   <p className="text-gray-600">Filosofia baseada em realçar a beleza única de cada paciente, respeitando suas características individuais.</p>
@@ -65,17 +65,17 @@ const About = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 bg-gradient-rose p-6 rounded-2xl">
+            <div className="grid grid-cols-3 gap-6 gradient-gray p-6 rounded-2xl">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-rose-600">+1000</h3>
+                <h3 className="text-2xl font-bold text-gold-600">+1000</h3>
                 <p className="text-sm text-gray-600">Procedimentos</p>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-rose-600">10+</h3>
+                <h3 className="text-2xl font-bold text-gold-600">10+</h3>
                 <p className="text-sm text-gray-600">Anos Experiência</p>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-rose-600">98%</h3>
+                <h3 className="text-2xl font-bold text-gold-600">98%</h3>
                 <p className="text-sm text-gray-600">Satisfação</p>
               </div>
             </div>

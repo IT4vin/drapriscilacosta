@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const BeforeAfter = () => {
@@ -107,7 +106,7 @@ const BeforeAfter = () => {
             href={`https://wa.me/5511999999999?text=Olá, vi os resultados de ${result.procedure} e gostaria de saber mais`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-rose-500 hover:text-rose-600 font-semibold text-sm inline-flex items-center"
+            className="text-gold-600 hover:text-gold-700 font-semibold text-sm inline-flex items-center"
           >
             Quero este resultado
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,13 +122,13 @@ const BeforeAfter = () => {
     <section id="resultados" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
-          <span className="text-rose-500 font-semibold text-sm uppercase tracking-wide">
+          <span className="text-gold-600 font-semibold text-sm uppercase tracking-wide">
             Resultados Reais
           </span>
           <h2 className="text-3xl md:text-4xl font-elegante font-bold text-gray-800 mt-2 mb-4">
             Antes & Depois
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-rose-500 to-gold-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-gold-500 to-gold-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Veja os resultados transformadores dos nossos procedimentos. Cada caso é único e personalizado.
           </p>
@@ -143,7 +142,7 @@ const BeforeAfter = () => {
               onClick={() => setActiveFilter(filter.id)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 activeFilter === filter.id
-                  ? 'bg-gradient-to-r from-rose-500 to-rose-600 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-gold-500 to-gold-600 text-white shadow-lg'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
