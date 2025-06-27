@@ -98,76 +98,50 @@ const Header = () => {
             </button>
           </div>
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
+          isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+        }`}>
+          <div className="bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-lg">
+            <div className="container mx-auto px-4 py-4">
+              <nav className="space-y-2">
+                {menuItems.map((item, index) => (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className="w-full text-left px-4 py-3 text-gray-700 hover:text-gold-600 hover:bg-gold-50 transition-all duration-200 font-medium rounded-lg"
+                    style={{
+                      animationDelay: `${index * 50}ms`
+                    }}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+                <div className="pt-2 border-t border-gray-200 mt-4">
+                  <a 
+                    href="https://wa.me/5511999999999?text=Olá, gostaria de agendar uma avaliação"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-3 rounded-lg hover:from-gold-600 hover:to-gold-700 transition-all duration-300 font-medium text-center block shadow-md hover:shadow-lg"
+                  >
+                    Agendar Avaliação
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
       </header>
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div 
-          className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm md:hidden"
+          className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden"
           onClick={() => setIsMenuOpen(false)}
         />
       )}
-
-      {/* Mobile Menu */}
-      <div className={`fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
-        isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-      }`}>
-        <div className="flex flex-col h-full">
-          {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">PC</span>
-              </div>
-              <div>
-                <h2 className="text-lg font-elegante font-bold text-gray-800">Menu</h2>
-                <p className="text-xs text-gray-600">Navegação</p>
-              </div>
-            </div>
-            <button
-              onClick={() => setIsMenuOpen(false)}
-              className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
-              aria-label="Close menu"
-            >
-              <X size={20} className="text-gray-600" />
-            </button>
-          </div>
-
-          {/* Menu Items */}
-          <nav className="flex-1 py-6">
-            <div className="space-y-2">
-              {menuItems.map((item, index) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="w-full text-left px-6 py-4 text-gray-700 hover:text-gold-600 hover:bg-gold-50 transition-all duration-200 font-medium text-lg border-l-4 border-transparent hover:border-gold-500"
-                  style={{
-                    animationDelay: `${index * 50}ms`
-                  }}
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-          </nav>
-
-          {/* CTA Button */}
-          <div className="p-6 border-t border-gray-200">
-            <a 
-              href="https://wa.me/5511999999999?text=Olá, gostaria de agendar uma avaliação"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsMenuOpen(false)}
-              className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-4 rounded-xl hover:from-gold-600 hover:to-gold-700 transition-all duration-300 font-medium text-center block shadow-lg hover:shadow-xl transform hover:scale-105"
-            >
-              Agendar Avaliação
-            </a>
-            <p className="text-xs text-gray-500 text-center mt-3">
-              Resposta rápida via WhatsApp
-            </p>
-          </div>
-        </div>
-      </div>
     </>
   );
 };
