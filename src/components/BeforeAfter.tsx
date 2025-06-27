@@ -1,0 +1,177 @@
+
+import { useState } from 'react';
+
+const BeforeAfter = () => {
+  const [activeFilter, setActiveFilter] = useState('todos');
+
+  const results = [
+    {
+      id: 1,
+      procedure: 'Preenchimento Labial',
+      category: 'harmonizacao',
+      before: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1594824804732-5cfc6bbc6ccd?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 2,
+      procedure: 'Harmonização Mandibular',
+      category: 'harmonizacao',
+      before: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 3,
+      procedure: 'Rinomodelação',
+      category: 'harmonizacao',
+      before: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 4,
+      procedure: 'Toxina Botulínica',
+      category: 'botox',
+      before: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 5,
+      procedure: 'Bichectomia',
+      category: 'cirurgia',
+      before: 'https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 6,
+      procedure: 'Lipo de Papada',
+      category: 'cirurgia',
+      before: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80'
+    }
+  ];
+
+  const filters = [
+    { id: 'todos', label: 'Todos os Resultados' },
+    { id: 'harmonizacao', label: 'Harmonização Facial' },
+    { id: 'botox', label: 'Botox & Toxinas' },
+    { id: 'cirurgia', label: 'Cirurgias' }
+  ];
+
+  const filteredResults = activeFilter === 'todos' 
+    ? results 
+    : results.filter(result => result.category === activeFilter);
+
+  const BeforeAfterCard = ({ result }: { result: typeof results[0] }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
+    return (
+      <div 
+        className="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="relative h-64 overflow-hidden">
+          <img 
+            src={result.before}
+            alt={`${result.procedure} - Antes`}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+              isHovered ? 'opacity-0' : 'opacity-100'
+            }`}
+          />
+          <img 
+            src={result.after}
+            alt={`${result.procedure} - Depois`}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+              isHovered ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+          
+          {/* Overlay labels */}
+          <div className="absolute top-4 left-4">
+            <span className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
+              {isHovered ? 'Depois' : 'Antes'}
+            </span>
+          </div>
+          
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+            <h3 className="text-white font-semibold text-lg">
+              {result.procedure}
+            </h3>
+          </div>
+        </div>
+        
+        <div className="p-4">
+          <p className="text-gray-600 text-sm mb-3">
+            Passe o mouse para ver o resultado
+          </p>
+          <a 
+            href={`https://wa.me/5511999999999?text=Olá, vi os resultados de ${result.procedure} e gostaria de saber mais`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-rose-500 hover:text-rose-600 font-semibold text-sm inline-flex items-center"
+          >
+            Quero este resultado
+            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <section id="resultados" className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16 animate-on-scroll">
+          <span className="text-rose-500 font-semibold text-sm uppercase tracking-wide">
+            Resultados Reais
+          </span>
+          <h2 className="text-3xl md:text-4xl font-elegante font-bold text-gray-800 mt-2 mb-4">
+            Antes & Depois
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-rose-500 to-gold-500 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Veja os resultados transformadores dos nossos procedimentos. Cada caso é único e personalizado.
+          </p>
+        </div>
+
+        {/* Filter buttons */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12 animate-on-scroll">
+          {filters.map((filter) => (
+            <button
+              key={filter.id}
+              onClick={() => setActiveFilter(filter.id)}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                activeFilter === filter.id
+                  ? 'bg-gradient-to-r from-rose-500 to-rose-600 text-white shadow-lg'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
+            >
+              {filter.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Results grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-on-scroll">
+          {filteredResults.map((result) => (
+            <BeforeAfterCard key={result.id} result={result} />
+          ))}
+        </div>
+
+        {/* Disclaimer */}
+        <div className="text-center mt-12 animate-on-scroll">
+          <div className="bg-gray-50 p-6 rounded-2xl max-w-4xl mx-auto">
+            <p className="text-sm text-gray-600 leading-relaxed">
+              <strong>Importante:</strong> Os resultados podem variar de pessoa para pessoa. 
+              As imagens são de pacientes reais que autorizaram o uso para fins educativos. 
+              Consulte sempre um profissional qualificado para avaliar seu caso específico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BeforeAfter;
