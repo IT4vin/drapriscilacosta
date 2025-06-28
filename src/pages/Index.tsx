@@ -9,6 +9,7 @@ import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import ScrollToTop from '../components/ScrollToTop';
 import SEO from '../components/SEO';
 
 const Index = () => {
@@ -46,6 +47,7 @@ const Index = () => {
       <Contact />
       <Footer />
       <WhatsAppFloat />
+      <ScrollToTop />
     </div>
   );
 };
