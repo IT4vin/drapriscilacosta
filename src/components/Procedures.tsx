@@ -1,30 +1,39 @@
 import styles from './Procedimentos.module.css';
+import { scrollToProcedureSection } from '../hooks/useScrollAnimation';
 
 const Procedures = () => {
   const harmonizacaoFacial = [
-    { name: "Preenchimento Labial", desc: "Lábios mais volumosos e definidos", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80" },
-    { name: "Bigode Chinês", desc: "Suavização de linhas de expressão", image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80" },
-    { name: "Olheira", desc: "Tratamento para olheiras e bolsas", image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80" },
-    { name: "Mandíbula", desc: "Definição e contorno mandibular", image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&q=80" },
-    { name: "Queixo (Mento)", desc: "Projeção e harmonização do queixo", image: "https://images.unsplash.com/photo-1594824804732-5cfc6bbc6ccd?auto=format&fit=crop&w=400&q=80" },
-    { name: "Rinomodelação", desc: "Correção nasal sem cirurgia", image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80" }
+    { name: "Preenchimento Labial", desc: "Lábios mais volumosos e definidos", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80", id: "preenchimento-labial" },
+    { name: "Bigode Chinês", desc: "Suavização de linhas de expressão", image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80", id: "bigode-chines" },
+    { name: "Olheira", desc: "Tratamento para olheiras e bolsas", image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80", id: "olheira" },
+    { name: "Mandíbula", desc: "Definição e contorno mandibular", image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&q=80", id: "mandibula" },
+    { name: "Queixo (Mento)", desc: "Projeção e harmonização do queixo", image: "https://images.unsplash.com/photo-1594824804732-5cfc6bbc6ccd?auto=format&fit=crop&w=400&q=80", id: "queixo-mento" },
+    { name: "Rinomodelação", desc: "Correção nasal sem cirurgia", image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80", id: "rinomodelacao" }
   ];
 
   const outrosProcedimentos = [
-    { name: "Top Model Look", desc: "Harmonização facial completa", image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" },
-    { name: "Bioestimulador", desc: "Estímulo natural do colágeno", image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80" },
-    { name: "Toxina Botulínica", desc: "Prevenção e suavização de rugas", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80" },
-    { name: "Fios de PDO", desc: "Lifting facial sem cirurgia", image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80" }
+    { name: "Top Model Look", desc: "Harmonização facial completa", image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80", id: "top-model-look" },
+    { name: "Bioestimulador", desc: "Estímulo natural do colágeno", image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80", id: "bioestimulador" },
+    { name: "Toxina Botulínica", desc: "Prevenção e suavização de rugas", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80", id: "toxina-botulinica" },
+    { name: "Fios de PDO", desc: "Lifting facial sem cirurgia", image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80", id: "fios-pdo" }
   ];
 
   const cirurgias = [
-    { name: "Lipo de Papada", desc: "Remoção de gordura localizada", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80" },
-    { name: "Bichectomia", desc: "Afinamento do rosto", image: "https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=400&q=80" },
-    { name: "Plastimoplastia", desc: "Rejuvenescimento com enxertia", image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80" }
+    { name: "Lipo de Papada", desc: "Remoção de gordura localizada", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80", id: "lipo-papada" },
+    { name: "Bichectomia", desc: "Afinamento do rosto", image: "https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=400&q=80", id: "bichectomia" },
+    { name: "Plastimoplastia", desc: "Rejuvenescimento com enxertia", image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80", id: "plastimoplastia" }
   ];
 
-  const ProcedureCard = ({ procedure }: { procedure: { name: string; desc: string; image: string } }) => (
-    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+  // Função para rolar suavemente até a seção correspondente
+  const scrollToSection = (sectionId: string) => {
+    scrollToProcedureSection(sectionId);
+  };
+
+  const ProcedureCard = ({ procedure }: { procedure: { name: string; desc: string; image: string; id: string } }) => (
+    <div 
+      className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2 cursor-pointer"
+      onClick={() => scrollToSection(procedure.id)}
+    >
       <div className="relative overflow-hidden">
         <img 
           src={procedure.image}
@@ -32,6 +41,11 @@ const Procedures = () => {
           className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        
+        {/* Indicador de clique */}
+        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          Ver resultados
+        </div>
       </div>
       
       <div className="p-6">
@@ -42,17 +56,33 @@ const Procedures = () => {
           {procedure.desc}
         </p>
         
-        <a 
-          href={`https://wa.me/5521995772875?text=Olá, gostaria de saber mais sobre ${procedure.name}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-gold-600 hover:text-gold-700 font-semibold text-sm transition-colors"
-        >
-          Saiba mais
-          <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
+        <div className="flex items-center justify-between">
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              scrollToSection(procedure.id);
+            }}
+            className="inline-flex items-center text-gold-600 hover:text-gold-700 font-semibold text-sm transition-colors"
+          >
+            Ver resultados
+            <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+          
+          <a 
+            href={`https://wa.me/5521995772875?text=Olá, gostaria de saber mais sobre ${procedure.name}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="inline-flex items-center text-rose-600 hover:text-rose-700 font-semibold text-sm transition-colors"
+          >
+            Saiba mais
+            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.959 8.959 0 01-4.706-1.356L3 21l1.356-5.294A8.959 8.959 0 013 11c0-4.418 3.582-8 8-8s8 3.582 8 8z" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   );

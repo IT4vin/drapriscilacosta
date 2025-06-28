@@ -8,6 +8,7 @@ const BeforeAfter = () => {
       id: 1,
       procedure: 'Preenchimento Labial',
       category: 'harmonizacao',
+      sectionId: 'preenchimento-labial',
       before: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80',
       after: 'https://images.unsplash.com/photo-1594824804732-5cfc6bbc6ccd?auto=format&fit=crop&w=400&q=80'
     },
@@ -15,6 +16,7 @@ const BeforeAfter = () => {
       id: 2,
       procedure: 'Harmonização Mandibular',
       category: 'harmonizacao',
+      sectionId: 'mandibula',
       before: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&q=80',
       after: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80'
     },
@@ -22,6 +24,7 @@ const BeforeAfter = () => {
       id: 3,
       procedure: 'Rinomodelação',
       category: 'harmonizacao',
+      sectionId: 'rinomodelacao',
       before: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80',
       after: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80'
     },
@@ -29,6 +32,7 @@ const BeforeAfter = () => {
       id: 4,
       procedure: 'Toxina Botulínica',
       category: 'botox',
+      sectionId: 'toxina-botulinica',
       before: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80',
       after: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80'
     },
@@ -36,6 +40,7 @@ const BeforeAfter = () => {
       id: 5,
       procedure: 'Bichectomia',
       category: 'cirurgia',
+      sectionId: 'bichectomia',
       before: 'https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=400&q=80',
       after: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80'
     },
@@ -43,6 +48,64 @@ const BeforeAfter = () => {
       id: 6,
       procedure: 'Lipo de Papada',
       category: 'cirurgia',
+      sectionId: 'lipo-papada',
+      before: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80'
+    },
+    // Procedimentos adicionais para completar a lista
+    {
+      id: 7,
+      procedure: 'Bigode Chinês',
+      category: 'harmonizacao',
+      sectionId: 'bigode-chines',
+      before: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 8,
+      procedure: 'Olheira',
+      category: 'harmonizacao',
+      sectionId: 'olheira',
+      before: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 9,
+      procedure: 'Queixo (Mento)',
+      category: 'harmonizacao',
+      sectionId: 'queixo-mento',
+      before: 'https://images.unsplash.com/photo-1594824804732-5cfc6bbc6ccd?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 10,
+      procedure: 'Top Model Look',
+      category: 'outros',
+      sectionId: 'top-model-look',
+      before: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 11,
+      procedure: 'Bioestimulador',
+      category: 'outros',
+      sectionId: 'bioestimulador',
+      before: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 12,
+      procedure: 'Fios de PDO',
+      category: 'outros',
+      sectionId: 'fios-pdo',
+      before: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80',
+      after: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 13,
+      procedure: 'Plastimoplastia',
+      category: 'cirurgia',
+      sectionId: 'plastimoplastia',
       before: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80',
       after: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80'
     }
@@ -52,6 +115,7 @@ const BeforeAfter = () => {
     { id: 'todos', label: 'Todos os Resultados' },
     { id: 'harmonizacao', label: 'Harmonização Facial' },
     { id: 'botox', label: 'Botox & Toxinas' },
+    { id: 'outros', label: 'Outros Tratamentos' },
     { id: 'cirurgia', label: 'Cirurgias' }
   ];
 
@@ -64,7 +128,8 @@ const BeforeAfter = () => {
 
     return (
       <div 
-        className="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+        id={result.sectionId}
+        className="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 scroll-mt-20"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -89,6 +154,11 @@ const BeforeAfter = () => {
             <span className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
               {isHovered ? 'Depois' : 'Antes'}
             </span>
+          </div>
+
+          {/* Indicador de destaque quando navegado */}
+          <div className="absolute top-4 right-4 opacity-0 animate-pulse">
+            <div className="w-3 h-3 bg-gold-500 rounded-full"></div>
           </div>
           
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
@@ -131,6 +201,10 @@ const BeforeAfter = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-gold-500 to-gold-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Veja os resultados transformadores dos nossos procedimentos. Cada caso é único e personalizado.
+            <br />
+            <span className="text-sm text-gold-600 font-medium">
+              💡 Clique em qualquer procedimento acima para ver os resultados específicos
+            </span>
           </p>
         </div>
 

@@ -93,7 +93,41 @@ html {
   transition: all 0.6s ease;
 }
 
-.animate-on-scroll.visible {
+.animate-on-scroll.visible,
+.animate-on-scroll.animate-on-scroll-active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Destaque para procedimentos */
+.procedure-highlighted {
+  animation: procedureHighlight 2s ease-in-out;
+}
+
+@keyframes procedureHighlight {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  }
+  25% {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -3px rgba(251, 191, 36, 0.3), 0 10px 10px -3px rgba(251, 191, 36, 0.1);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 25px 30px -3px rgba(251, 191, 36, 0.4), 0 15px 15px -3px rgba(251, 191, 36, 0.2);
+  }
+  75% {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -3px rgba(251, 191, 36, 0.2), 0 10px 10px -3px rgba(251, 191, 36, 0.1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Suporte a scroll suave com offset */
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
 }
