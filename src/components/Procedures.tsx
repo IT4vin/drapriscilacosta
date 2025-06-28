@@ -1,3 +1,5 @@
+import styles from './Procedimentos.module.css';
+
 const Procedures = () => {
   const harmonizacaoFacial = [
     { name: "Preenchimento Labial", desc: "Lábios mais volumosos e definidos", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80" },
@@ -76,7 +78,7 @@ const Procedures = () => {
           <h3 className="text-2xl font-elegante font-bold text-gray-800 mb-8 text-center">
             Harmonização Facial
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className={styles.container}>
             {harmonizacaoFacial.map((procedure, index) => (
               <ProcedureCard key={index} procedure={procedure} />
             ))}
@@ -88,7 +90,7 @@ const Procedures = () => {
           <h3 className="text-2xl font-elegante font-bold text-gray-800 mb-8 text-center">
             Outros Tratamentos
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className={styles.container}>
             {outrosProcedimentos.map((procedure, index) => (
               <ProcedureCard key={index} procedure={procedure} />
             ))}
@@ -100,7 +102,7 @@ const Procedures = () => {
           <h3 className="text-2xl font-elegante font-bold text-gray-800 mb-8 text-center">
             Cirurgias Faciais
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className={styles.container}>
             {cirurgias.map((procedure, index) => (
               <ProcedureCard key={index} procedure={procedure} />
             ))}
