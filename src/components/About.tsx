@@ -6,11 +6,12 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="animate-on-scroll">
-            <div className="relative">
+            <div className="relative w-full h-auto md:w-[400px] md:h-[600px] mx-auto">
               <img 
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
+                src="/imagens/priscilacosta2.svg"
                 alt="Dra. Priscila Costa em seu consultório"
-                className="w-full h-96 md:h-[500px] object-cover rounded-3xl shadow-xl"
+                className="w-full h-auto md:w-full md:h-full object-cover rounded-3xl shadow-xl"
+                style={{ objectPosition: 'center top' }}
               />
               
               {/* Credential badges */}

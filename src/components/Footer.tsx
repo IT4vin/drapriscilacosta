@@ -9,9 +9,11 @@ const Footer = () => {
           {/* Logo and info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">PC</span>
-              </div>
+              <img 
+                src="/imagens/logo.svg"
+                alt="Logo Priscila Costa"
+                className="w-10 h-10 object-contain rounded-full"
+              />
               <div>
                 <h3 className="text-xl font-elegante font-bold">Consultório Priscila Costa</h3>
                 <p className="text-gray-400 text-sm">Harmonização Facial & Estética</p>

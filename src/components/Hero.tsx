@@ -1,11 +1,58 @@
+const BackgroundDecorations = () => (
+  <>
+    <div className="absolute top-20 right-10 w-32 h-32 bg-gold-200/30 rounded-full blur-xl"></div>
+    <div className="absolute bottom-20 left-10 w-24 h-24 bg-neutral-200/30 rounded-full blur-xl"></div>
+  </>
+);
+
+const TrustIndicators = () => (
+  <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600">
+    <div className="flex items-center gap-2">
+      <div className="w-2 h-2 bg-gold-500 rounded-full"></div>
+      <span>+1000 procedimentos realizados</span>
+    </div>
+    <div className="flex items-center gap-2">
+      <div className="w-2 h-2 bg-neutral-500 rounded-full"></div>
+      <span>Especialista certificada</span>
+    </div>
+    <div className="flex items-center gap-2">
+      <div className="w-2 h-2 bg-gold-500 rounded-full"></div>
+      <span>Resultados naturais</span>
+    </div>
+  </div>
+);
+
+type FloatingCardProps = {
+  position: "top-left" | "bottom-right";
+  icon: string;
+  title: string;
+  subtitle: string;
+};
+
+const FloatingCard = ({ position, icon, title, subtitle }: FloatingCardProps) => {
+  const posClass =
+    position === "top-left"
+      ? "absolute -top-4 -left-4"
+      : "absolute -bottom-4 -right-4";
+  return (
+    <div className={`${posClass} bg-white p-4 rounded-2xl shadow-lg z-20 hidden md:block`}>
+      <div className="flex items-center gap-2">
+        <span className="text-2xl">{icon}</span>
+        <div>
+          <p className="font-semibold text-gray-800">{title}</p>
+          <p className="text-xs text-gray-600">{subtitle}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Hero = () => {
   return (
     <section id="inicio" className="min-h-screen flex items-center gradient-gray relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-20 right-10 w-32 h-32 bg-gold-200/30 rounded-full blur-xl"></div>
-      <div className="absolute bottom-20 left-10 w-24 h-24 bg-neutral-200/30 rounded-full blur-xl"></div>
-      
+      <BackgroundDecorations />
+
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -14,7 +61,7 @@ const Hero = () => {
               Transforme sua{' '}
               <span className="text-gradient">autoestima</span> com a estética avançada
             </h1>
-            
+
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
               Dra. Priscila Costa, especialista em harmonização facial e procedimentos estéticos de última geração. 
               Realce sua beleza natural com segurança e excelência.
@@ -39,20 +86,7 @@ const Hero = () => {
             </div>
 
             {/* Trust indicators */}
-            <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-gold-500 rounded-full"></div>
-                <span>+1000 procedimentos realizados</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-neutral-500 rounded-full"></div>
-                <span>Especialista certificada</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-gold-500 rounded-full"></div>
-                <span>Resultados naturais</span>
-              </div>
-            </div>
+            <TrustIndicators />
           </div>
 
           {/* Image */}
@@ -60,31 +94,24 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-gold-400/20 to-neutral-400/20 rounded-3xl transform rotate-6"></div>
               <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80"
+                src="/imagens/priscilacosta.svg"
                 alt="Dra. Priscila Costa"
                 className="w-full h-96 md:h-[500px] object-cover rounded-3xl shadow-2xl relative z-10"
               />
               
               {/* Floating cards */}
-              <div className="absolute -top-4 -left-4 bg-white p-4 rounded-2xl shadow-lg z-20 hidden md:block">
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl">⭐</span>
-                  <div>
-                    <p className="font-semibold text-gray-800">5.0</p>
-                    <p className="text-xs text-gray-600">Google Reviews</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-2xl shadow-lg z-20 hidden md:block">
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl">💉</span>
-                  <div>
-                    <p className="font-semibold text-gray-800">Harmonização</p>
-                    <p className="text-xs text-gray-600">Facial Premium</p>
-                  </div>
-                </div>
-              </div>
+              <FloatingCard
+                position="top-left"
+                icon="⭐"
+                title="5.0"
+                subtitle="Google Reviews"
+              />
+              <FloatingCard
+                position="bottom-right"
+                icon="💉"
+                title="Harmonização"
+                subtitle="Facial Premium"
+              />
             </div>
           </div>
         </div>
