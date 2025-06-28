@@ -26,7 +26,7 @@ export const formatWhatsAppMessage = (data: {
   return message;
 };
 
-export const openWhatsApp = (message: string, phoneNumber: string = '5511999999999') => {
+export const openWhatsApp = (message: string, phoneNumber: string = '5521995772875') => {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
 };

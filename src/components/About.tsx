@@ -16,7 +16,7 @@ const About = () => {
               
               {/* Credential badges */}
               <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm p-3 rounded-xl">
-                <p className="text-sm font-semibold text-gray-800">CRM 123.456</p>
+                <p className="text-sm font-semibold text-gray-800">CRO 37657</p>
                 <p className="text-xs text-gray-600">Especialista RQE</p>
               </div>
             </div>

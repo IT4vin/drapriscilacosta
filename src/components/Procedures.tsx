@@ -43,7 +43,7 @@ const Procedures = () => {
         </p>
         
         <a 
-          href={`https://wa.me/5511999999999?text=Olá, gostaria de saber mais sobre ${procedure.name}`}
+          href={`https://wa.me/5521995772875?text=Olá, gostaria de saber mais sobre ${procedure.name}`}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center text-gold-600 hover:text-gold-700 font-semibold text-sm transition-colors"
@@ -119,7 +119,7 @@ const Procedures = () => {
               Entre em contato conosco para uma consulta personalizada e descubra qual o melhor tratamento para você.
             </p>
             <a 
-              href="https://wa.me/5511999999999?text=Olá, gostaria de uma consulta personalizada"
+              href="https://wa.me/5521995772875?text=Olá, gostaria de uma consulta personalizada"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-gold-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold inline-flex items-center"

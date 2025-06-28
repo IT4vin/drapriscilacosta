@@ -103,7 +103,7 @@ const BeforeAfter = () => {
             Passe o mouse para ver o resultado
           </p>
           <a 
-            href={`https://wa.me/5511999999999?text=Olá, vi os resultados de ${result.procedure} e gostaria de saber mais`}
+            href={`https://wa.me/5521995772875?text=Olá, vi os resultados de ${result.procedure} e gostaria de saber mais`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gold-600 hover:text-gold-700 font-semibold text-sm inline-flex items-center"

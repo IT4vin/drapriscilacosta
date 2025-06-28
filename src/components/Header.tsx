@@ -77,7 +77,7 @@ const Header = () => {
                 </button>
               ))}
               <a 
-                href="https://wa.me/5511999999999?text=Olá, gostaria de agendar uma avaliação"
+                href="https://wa.me/5521995772875?text=Olá, gostaria de agendar uma avaliação"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2 rounded-full hover:from-gold-600 hover:to-gold-700 transition-all duration-300 font-medium shadow-md hover:shadow-lg transform hover:scale-105"
@@ -122,7 +122,7 @@ const Header = () => {
                 ))}
                 <div className="pt-2 border-t border-gray-200 mt-4">
                   <a 
-                    href="https://wa.me/5511999999999?text=Olá, gostaria de agendar uma avaliação"
+                    href="https://wa.me/5521995772875?text=Olá, gostaria de agendar uma avaliação"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsMenuOpen(false)}

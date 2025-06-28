@@ -14,7 +14,7 @@ const WhatsAppFloat = () => {
 
   const handleClick = () => {
     const message = "Olá! Gostaria de agendar uma avaliação gratuita para harmonização facial.";
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5521995772875?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

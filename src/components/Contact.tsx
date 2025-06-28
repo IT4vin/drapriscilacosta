@@ -18,7 +18,7 @@ WhatsApp: ${formData.whatsapp}
 Procedimento de interesse: ${formData.procedimento}
 Mensagem: ${formData.mensagem}`;
     
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5521995772875?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -76,8 +76,8 @@ Mensagem: ${formData.mensagem}`;
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Telefone</h3>
                   <p className="text-gray-600">
-                    <a href="tel:+5511999999999" className="hover:text-rose-500 transition-colors">
-                      (11) 99999-9999
+                    <a href="tel:+5521995772875" className="hover:text-rose-500 transition-colors">
+                      (21) 99577-2875
                     </a>
                   </p>
                 </div>
@@ -190,7 +190,7 @@ Mensagem: ${formData.mensagem}`;
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors"
-                    placeholder="(11) 99999-9999"
+                    placeholder="(21) 99577-2875"
                   />
                 </div>
 
