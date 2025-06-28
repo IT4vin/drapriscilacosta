@@ -60,9 +60,9 @@ Mensagem: ${formData.mensagem}`;
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Endereço</h3>
                   <p className="text-gray-600">
-                    Rua das Flores, 123 - Sala 45<br />
-                    Jardins, São Paulo - SP<br />
-                    CEP: 01234-567
+                    Estr. da Cachamorra, 350<br />
+                    Campo Grande, Rio de Janeiro - RJ<br />
+                    CEP: 23040-150
                   </p>
                 </div>
               </div>
@@ -263,7 +263,7 @@ Mensagem: ${formData.mensagem}`;
                 </svg>
                 <p className="text-gray-600">
                   Mapa interativo será carregado aqui<br />
-                  <span className="text-sm">Rua das Flores, 123 - Jardins, São Paulo</span>
+                  <span className="text-sm">Estr. da Cachamorra, 350 - Campo Grande, Rio de Janeiro</span>
                 </p>
               </div>
             </div>

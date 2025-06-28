@@ -36,7 +36,7 @@ const About = () => {
 
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Médica especialista em harmonização facial e procedimentos estéticos, com mais de 
-              10 anos de experiência dedicados à arte de realçar a beleza natural dos pacientes.
+              16 anos de experiência dedicados à arte de realçar a beleza natural dos pacientes.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -72,7 +72,7 @@ const About = () => {
                 <p className="text-sm text-gray-600">Procedimentos</p>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-gold-600">10+</h3>
+                <h3 className="text-2xl font-bold text-gold-600">16+</h3>
                 <p className="text-sm text-gray-600">Anos Experiência</p>
               </div>
               <div className="text-center">
