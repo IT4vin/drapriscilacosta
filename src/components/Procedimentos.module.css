@@ -1,17 +1,28 @@
 .container {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas em mobile */
 }
 
-@media (min-width: 400px) {
+/* Tablet - 3 colunas */
+@media (min-width: 768px) {
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
 }
 
-@media (min-width: 768px) {
+/* Desktop - 4 colunas */
+@media (min-width: 1024px) {
   .container {
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+  }
+}
+
+/* Telas muito grandes - mantém 4 colunas mas aumenta gap */
+@media (min-width: 1200px) {
+  .container {
+    gap: 2.5rem;
   }
 } 
