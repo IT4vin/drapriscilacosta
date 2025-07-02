@@ -97,8 +97,10 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <p className="text-gray-300 text-sm">
+                  Campo Grande Office & Mall<br />
                   Estr. da Cachamorra, 350<br />
-                  Campo Grande, Rio de Janeiro - RJ
+                  Campo Grande, Rio de Janeiro - RJ<br />
+                  CEP: 23040-150
                 </p>
               </div>
               

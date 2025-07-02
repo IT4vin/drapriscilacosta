@@ -60,6 +60,7 @@ Mensagem: ${formData.mensagem}`;
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Endereço</h3>
                   <p className="text-gray-600">
+                    Campo Grande Office & Mall<br />
                     Estr. da Cachamorra, 350<br />
                     Campo Grande, Rio de Janeiro - RJ<br />
                     CEP: 23040-150
@@ -255,16 +256,48 @@ Mensagem: ${formData.mensagem}`;
               Nossa Localização
             </h3>
             
-            <div className="aspect-video bg-gray-200 rounded-2xl flex items-center justify-center">
-              <div className="text-center">
-                <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <p className="text-gray-600">
-                  Mapa interativo será carregado aqui<br />
-                  <span className="text-sm">Estr. da Cachamorra, 350 - Campo Grande, Rio de Janeiro</span>
-                </p>
+            <div className="aspect-video rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://maps.google.com/maps?q=3CMX%2B2H+Campo+Grande,+Rio+de+Janeiro+-+RJ&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização do Consultório Priscila Costa - Campo Grande Office & Mall, Estr. da Cachamorra, 350"
+              />
+            </div>
+            
+            <div className="mt-6 text-center">
+              <p className="text-gray-600 mb-4">
+                <strong>Endereço:</strong> Campo Grande Office & Mall<br />
+                Estr. da Cachamorra, 350 - Campo Grande, Rio de Janeiro - RJ
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=3CMX%2B2H+Campo+Grande,+Rio+de+Janeiro+-+RJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  Ver no Google Maps
+                </a>
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=3CMX%2B2H+Campo+Grande,+Rio+de+Janeiro+-+RJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                  Como Chegar
+                </a>
               </div>
             </div>
           </div>

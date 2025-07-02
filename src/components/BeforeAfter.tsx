@@ -9,24 +9,24 @@ const BeforeAfter = () => {
       procedure: 'Preenchimento Labial',
       category: 'harmonizacao',
       sectionId: 'preenchimento-labial',
-      before: '/imagens/Dourado - Preenchimento Labial.svg',
-      after: '/imagens/Dourado - Preenchimento Labial.svg'
+      before: '/antes-depois/preenchimento labial.svg',
+      after: '/antes-depois/preenchimento labial.svg'
     },
     {
       id: 2,
       procedure: 'Harmonização Mandibular',
       category: 'harmonizacao',
       sectionId: 'mandibula',
-      before: '/imagens/Dourado - Mandibula.svg',
-      after: '/imagens/Dourado - Mandibula.svg'
+      before: '/antes-depois/mandibula e rinomodelação.svg',
+      after: '/antes-depois/mandibula e rinomodelação.svg'
     },
     {
       id: 3,
       procedure: 'Rinomodelação',
       category: 'harmonizacao',
       sectionId: 'rinomodelacao',
-      before: '/imagens/Dourado - Rinomodelação.svg',
-      after: '/imagens/Dourado - Rinomodelação.svg'
+      before: '/antes-depois/mandibula e rinomodelação.svg',
+      after: '/antes-depois/mandibula e rinomodelação.svg'
     },
     {
       id: 4,
@@ -49,8 +49,8 @@ const BeforeAfter = () => {
       procedure: 'Lipo de Papada',
       category: 'cirurgia',
       sectionId: 'lipo-papada',
-      before: '/imagens/Dourado - Lipo de Papada.svg',
-      after: '/imagens/Dourado - Lipo de Papada.svg'
+      before: '/antes-depois/lipo de papada.svg',
+      after: '/antes-depois/lipo de papada.svg'
     },
     // Procedimentos adicionais para completar a lista
     {
@@ -66,8 +66,8 @@ const BeforeAfter = () => {
       procedure: 'Olheira',
       category: 'harmonizacao',
       sectionId: 'olheira',
-      before: '/imagens/Dourado - Olheira.svg',
-      after: '/imagens/Dourado - Olheira.svg'
+      before: '/antes-depois/olheira.svg',
+      after: '/antes-depois/olheira.svg'
     },
     {
       id: 9,
