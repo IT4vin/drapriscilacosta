@@ -9,48 +9,48 @@ const BeforeAfter = () => {
       procedure: 'Preenchimento Labial',
       category: 'harmonizacao',
       sectionId: 'preenchimento-labial',
-      before: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1594824804732-5cfc6bbc6ccd?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Preenchimento Labial.svg',
+      after: '/imagens/Dourado - Preenchimento Labial.svg'
     },
     {
       id: 2,
       procedure: 'Harmonização Mandibular',
       category: 'harmonizacao',
       sectionId: 'mandibula',
-      before: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Mandibula.svg',
+      after: '/imagens/Dourado - Mandibula.svg'
     },
     {
       id: 3,
       procedure: 'Rinomodelação',
       category: 'harmonizacao',
       sectionId: 'rinomodelacao',
-      before: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Rinomodelação.svg',
+      after: '/imagens/Dourado - Rinomodelação.svg'
     },
     {
       id: 4,
       procedure: 'Toxina Botulínica',
       category: 'botox',
       sectionId: 'toxina-botulinica',
-      before: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Toxina Botulinica.svg',
+      after: '/imagens/Dourado - Toxina Botulinica.svg'
     },
     {
       id: 5,
       procedure: 'Bichectomia',
       category: 'cirurgia',
       sectionId: 'bichectomia',
-      before: 'https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Bichectomia.svg',
+      after: '/imagens/Dourado - Bichectomia.svg'
     },
     {
       id: 6,
       procedure: 'Lipo de Papada',
       category: 'cirurgia',
       sectionId: 'lipo-papada',
-      before: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Lipo de Papada.svg',
+      after: '/imagens/Dourado - Lipo de Papada.svg'
     },
     // Procedimentos adicionais para completar a lista
     {
@@ -58,56 +58,56 @@ const BeforeAfter = () => {
       procedure: 'Bigode Chinês',
       category: 'harmonizacao',
       sectionId: 'bigode-chines',
-      before: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Bigode Chines.svg',
+      after: '/imagens/Dourado - Bigode Chines.svg'
     },
     {
       id: 8,
       procedure: 'Olheira',
       category: 'harmonizacao',
       sectionId: 'olheira',
-      before: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Olheira.svg',
+      after: '/imagens/Dourado - Olheira.svg'
     },
     {
       id: 9,
       procedure: 'Queixo (Mento)',
       category: 'harmonizacao',
       sectionId: 'queixo-mento',
-      before: 'https://images.unsplash.com/photo-1594824804732-5cfc6bbc6ccd?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Queixo Mento.svg',
+      after: '/imagens/Dourado - Queixo Mento.svg'
     },
     {
       id: 10,
       procedure: 'Top Model Look',
       category: 'outros',
       sectionId: 'top-model-look',
-      before: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Top Model Look.svg',
+      after: '/imagens/Dourado - Top Model Look.svg'
     },
     {
       id: 11,
       procedure: 'Bioestimulador',
       category: 'outros',
       sectionId: 'bioestimulador',
-      before: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Bioestimulador.svg',
+      after: '/imagens/Dourado - Bioestimulador.svg'
     },
     {
       id: 12,
       procedure: 'Fios de PDO',
       category: 'outros',
       sectionId: 'fios-pdo',
-      before: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Fios de PDO.svg',
+      after: '/imagens/Dourado - Fios de PDO.svg'
     },
     {
       id: 13,
       procedure: 'Plastimoplastia',
       category: 'cirurgia',
       sectionId: 'plastimoplastia',
-      before: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80',
-      after: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80'
+      before: '/imagens/Dourado - Plastimoplastia.svg',
+      after: '/imagens/Dourado - Plastimoplastia.svg'
     }
   ];
 

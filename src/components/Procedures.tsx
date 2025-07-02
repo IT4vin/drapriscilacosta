@@ -3,25 +3,25 @@ import { scrollToProcedureSection } from '../hooks/useScrollAnimation';
 
 const Procedures = () => {
   const harmonizacaoFacial = [
-    { name: "Preenchimento Labial", desc: "Lábios mais volumosos e definidos", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80", id: "preenchimento-labial" },
-    { name: "Bigode Chinês", desc: "Suavização de linhas de expressão", image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80", id: "bigode-chines" },
-    { name: "Olheira", desc: "Tratamento para olheiras e bolsas", image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80", id: "olheira" },
-    { name: "Mandíbula", desc: "Definição e contorno mandibular", image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&q=80", id: "mandibula" },
-    { name: "Queixo (Mento)", desc: "Projeção e harmonização do queixo", image: "https://images.unsplash.com/photo-1594824804732-5cfc6bbc6ccd?auto=format&fit=crop&w=400&q=80", id: "queixo-mento" },
-    { name: "Rinomodelação", desc: "Correção nasal sem cirurgia", image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80", id: "rinomodelacao" }
+    { name: "Preenchimento Labial", desc: "Lábios mais volumosos e definidos", image: "/imagens/Dourado - Preenchimento Labial.svg", id: "preenchimento-labial" },
+    { name: "Bigode Chinês", desc: "Suavização de linhas de expressão", image: "/imagens/Dourado - Bigode Chines.svg", id: "bigode-chines" },
+    { name: "Olheira", desc: "Tratamento para olheiras e bolsas", image: "/imagens/Dourado - Olheira.svg", id: "olheira" },
+    { name: "Mandíbula", desc: "Definição e contorno mandibular", image: "/imagens/Dourado - Mandibula.svg", id: "mandibula" },
+    { name: "Queixo (Mento)", desc: "Projeção e harmonização do queixo", image: "/imagens/Dourado - Queixo Mento.svg", id: "queixo-mento" },
+    { name: "Rinomodelação", desc: "Correção nasal sem cirurgia", image: "/imagens/Dourado - Rinomodelação.svg", id: "rinomodelacao" }
   ];
 
   const outrosProcedimentos = [
-    { name: "Top Model Look", desc: "Harmonização facial completa", image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80", id: "top-model-look" },
-    { name: "Bioestimulador", desc: "Estímulo natural do colágeno", image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80", id: "bioestimulador" },
-    { name: "Toxina Botulínica", desc: "Prevenção e suavização de rugas", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80", id: "toxina-botulinica" },
-    { name: "Fios de PDO", desc: "Lifting facial sem cirurgia", image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80", id: "fios-pdo" }
+    { name: "Top Model Look", desc: "Harmonização facial completa", image: "/imagens/Dourado - Top Model Look.svg", id: "top-model-look" },
+    { name: "Bioestimulador", desc: "Estímulo natural do colágeno", image: "/imagens/Dourado - Bioestimulador.svg", id: "bioestimulador" },
+    { name: "Toxina Botulínica", desc: "Prevenção e suavização de rugas", image: "/imagens/Dourado - Toxina Botulinica.svg", id: "toxina-botulinica" },
+    { name: "Fios de PDO", desc: "Lifting facial sem cirurgia", image: "/imagens/Dourado - Fios de PDO.svg", id: "fios-pdo" }
   ];
 
   const cirurgias = [
-    { name: "Lipo de Papada", desc: "Remoção de gordura localizada", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80", id: "lipo-papada" },
-    { name: "Bichectomia", desc: "Afinamento do rosto", image: "https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=400&q=80", id: "bichectomia" },
-    { name: "Plastimoplastia", desc: "Rejuvenescimento com enxertia", image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80", id: "plastimoplastia" }
+    { name: "Lipo de Papada", desc: "Remoção de gordura localizada", image: "/imagens/Dourado - Lipo de Papada.svg", id: "lipo-papada" },
+    { name: "Bichectomia", desc: "Afinamento do rosto", image: "/imagens/Dourado - Bichectomia.svg", id: "bichectomia" },
+    { name: "Plastimoplastia", desc: "Rejuvenescimento com enxertia", image: "/imagens/Dourado - Plastimoplastia.svg", id: "plastimoplastia" }
   ];
 
   // Função para rolar suavemente até a seção correspondente
