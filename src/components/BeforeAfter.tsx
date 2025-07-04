@@ -33,8 +33,8 @@ const BeforeAfter = () => {
       procedure: 'Toxina Botulínica',
       category: 'botox',
       sectionId: 'toxina-botulinica',
-      before: '/imagens/Dourado - Toxina Botulinica.svg',
-      after: '/imagens/Dourado - Toxina Botulinica.svg'
+      before: '/antes-depois/Toxina Botulínica.svg',
+      after: '/antes-depois/Toxina Botulínica.svg'
     },
     {
       id: 5,
@@ -58,8 +58,8 @@ const BeforeAfter = () => {
       procedure: 'Bigode Chinês',
       category: 'harmonizacao',
       sectionId: 'bigode-chines',
-      before: '/imagens/Dourado - Bigode Chines.svg',
-      after: '/imagens/Dourado - Bigode Chines.svg'
+      before: '/antes-depois/.svg',
+      after: '/antes-depois/Bigode Chines.svg'
     },
     {
       id: 8,
