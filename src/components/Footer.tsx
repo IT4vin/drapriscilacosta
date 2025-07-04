@@ -131,31 +131,17 @@ const Footer = () => {
                   href="https://instagram.com/drapriscilacostaoficial" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-8 h-8 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+                  className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform"
                 >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.621 5.367 11.987 11.988 11.987c6.62 0 11.987-5.366 11.987-11.987C24.014 5.367 18.637.001 12.017.001z"/>
-                  </svg>
+                  <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-8 h-8" />
                 </a>
                 <a 
                   href="https://tiktok.com/@drapriscilacostaoficial" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+                  className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform"
                 >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19.321 5.562a5.124 5.124 0 0 1-.443-.258 6.228 6.228 0 0 1-1.137-.966c-.849-.849-1.339-2.018-1.339-3.201V.6h-3.066v14.879c0 1.501-1.218 2.719-2.719 2.719s-2.719-1.218-2.719-2.719c0-1.501 1.218-2.719 2.719-2.719.337 0 .66.062.958.175V9.856c-.298-.041-.603-.062-.916-.062-3.37 0-6.098 2.728-6.098 6.098s2.728 6.098 6.098 6.098 6.098-2.728 6.098-6.098V7.421a9.34 9.34 0 0 0 5.564 1.834V6.187c-.758 0-1.473-.18-2.104-.498L19.32 5.56z"/>
-                  </svg>
-                </a>
-                <a 
-                  href="https://youtube.com/@drapriscilacostaoficial" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
-                >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
+                  <img src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-8 h-8" />
                 </a>
               </div>
             </div>

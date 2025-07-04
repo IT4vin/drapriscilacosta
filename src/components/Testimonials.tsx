@@ -6,7 +6,7 @@ const Testimonials = () => {
       procedure: "Harmonização Facial",
       rating: 5,
       text: "Fiz minha harmonização facial com a Dra. Priscila e o resultado superou todas as minhas expectativas! Ela tem um olhar artístico incrível e me deixou muito natural. Recomendo de olhos fechados!",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=100&q=80"
+      image: '/Profile/profile.svg'
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ const Testimonials = () => {
       procedure: "Preenchimento Labial",
       rating: 5,
       text: "Estava com medo de ficar artificial, mas a Dra. Priscila fez um trabalho perfeito. Meus lábios ficaram naturais e harmoniosos com meu rosto. Atendimento nota 10!",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80"
+      image: '/Profile/profile.svg'    
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ const Testimonials = () => {
       procedure: "Toxina Botulínica",
       rating: 5,
       text: "Excelente profissional! Muito cuidadosa, explicou todo o procedimento e o resultado foi exatamente o que eu esperava. Consultório impecável e atendimento humanizado.",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+      image: '/Profile/profile.svg'
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ const Testimonials = () => {
       procedure: "Rinomodelação",
       rating: 5,
       text: "Sempre tive complexo com meu nariz, mas não queria fazer cirurgia. A rinomodelação com a Dra. Priscila mudou minha vida! Resultado incrível e recuperação super tranquila.",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+      image: '/Profile/profile.svg'
     },
     {
       id: 5,
@@ -38,7 +38,7 @@ const Testimonials = () => {
       procedure: "Bichectomia",
       rating: 5,
       text: "Dra. Priscila é uma artista! Fez minha bichectomia com tanto cuidado e carinho. O resultado ficou perfeito, exatamente como eu sonhava. Super indico!",
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+      image: '/Profile/profile.svg'
     },
     {
       id: 6,
@@ -46,7 +46,7 @@ const Testimonials = () => {
       procedure: "Bioestimulador",
       rating: 5,
       text: "O bioestimulador de colágeno foi a melhor escolha que fiz! Dra. Priscila é muito técnica e cuidadosa. Minha pele ficou mais firme e jovem. Voltarei sempre!",
-      image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=100&q=80"
+      image: '/Profile/profile.svg'
     }
   ];
 
@@ -109,7 +109,7 @@ const Testimonials = () => {
           <div className="bg-white p-8 rounded-3xl shadow-xl max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-6">
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/120px-Google_%22G%22_Logo.svg.png"
+                src='/google/google-logo.svg'
                 alt="Google"
                 className="w-8 h-8 mr-3"
               />
@@ -150,35 +150,43 @@ const Testimonials = () => {
         {/* Video testimonials section */}
         <div className="mt-16 animate-on-scroll">
           <h3 className="text-2xl font-elegante font-bold text-gray-800 text-center mb-8">
-            Depoimentos em Vídeo
+             Vídeos de procedimentos
           </h3>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                <button className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center hover:bg-gold-600 transition-colors">
-                  <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
-                  </svg>
-                </button>
+              <div className="aspect-video bg-gray-900 relative">
+                <video 
+                  className="w-full h-full object-cover rounded-t-2xl"
+                  controls
+                  preload="metadata"
+                  poster="/imagens/logo2.svg"
+                >
+                  <source src="/Video/Video - consultorio.mp4" type="video/mp4" />
+                  Seu navegador não suporta o elemento de vídeo.
+                </video>
               </div>
               <div className="p-4">
-                <h4 className="font-semibold text-gray-800">Marina - Harmonização Completa</h4>
-                <p className="text-sm text-gray-600">Veja o relato completo da transformação</p>
+                <h4 className="font-semibold text-gray-800">Consultório - Dra. Priscila Costa</h4>
+                <p className="text-sm text-gray-600">Conheça nosso consultório e estrutura</p>
               </div>
             </div>
             
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                <button className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center hover:bg-gold-600 transition-colors">
-                  <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
-                  </svg>
-                </button>
+              <div className="aspect-video bg-gray-900 relative">
+                <video 
+                  className="w-full h-full object-cover rounded-t-2xl"
+                  controls
+                  preload="metadata"
+                  poster="/antes-depois/lipo de papada.svg"
+                >
+                  <source src="/Video/Video - Lipo de Papada.mp4" type="video/mp4" />
+                  Seu navegador não suporta o elemento de vídeo.
+                </video>
               </div>
               <div className="p-4">
-                <h4 className="font-semibold text-gray-800">Paula - Preenchimento Labial</h4>
-                <p className="text-sm text-gray-600">Experiência completa do procedimento</p>
+                <h4 className="font-semibold text-gray-800">Lipo de Papada</h4>
+                <p className="text-sm text-gray-600">Vídeo do procedimento de lipo de papada</p>
               </div>
             </div>
           </div>
