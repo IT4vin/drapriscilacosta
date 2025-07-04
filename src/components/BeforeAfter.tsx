@@ -58,7 +58,7 @@ const BeforeAfter = () => {
       procedure: 'Bigode Chinês',
       category: 'harmonizacao',
       sectionId: 'bigode-chines',
-      before: '/antes-depois/.svg',
+      before: '/antes-depois/Bigode Chines.svg',
       after: '/antes-depois/Bigode Chines.svg'
     },
     {
