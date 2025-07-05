@@ -76,6 +76,27 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
+              
+              {/* Social Media Icons */}
+              <div className="flex items-center space-x-3">
+                <a 
+                  href="https://www.instagram.com/drapriscilacostahof" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform"
+                >
+                  <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://www.tiktok.com/@drapriscilacosta" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform"
+                >
+                  <img src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-6 h-6" />
+                </a>
+              </div>
+              
               <a 
                 href="https://wa.me/5521995772875?text=Olá, gostaria de agendar uma avaliação"
                 target="_blank"
@@ -121,6 +142,30 @@ const Header = () => {
                   </button>
                 ))}
                 <div className="pt-2 border-t border-gray-200 mt-4">
+                  {/* Social Media Mobile */}
+                  <div className="flex justify-center space-x-6 mb-4">
+                    <a 
+                      href="https://www.instagram.com/drapriscilacostahof" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-pink-50 to-rose-50 hover:from-pink-100 hover:to-rose-100 rounded-lg transition-all duration-300"
+                    >
+                      <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-6 h-6" />
+                      <span className="text-sm font-medium text-gray-700">Instagram</span>
+                    </a>
+                    <a 
+                      href="https://www.tiktok.com/@drapriscilacosta" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 rounded-lg transition-all duration-300"
+                    >
+                      <img src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-6 h-6" />
+                      <span className="text-sm font-medium text-gray-700">TikTok</span>
+                    </a>
+                  </div>
+                  
                   <a 
                     href="https://wa.me/5521995772875?text=Olá, gostaria de agendar uma avaliação"
                     target="_blank"

@@ -136,7 +136,7 @@ const Footer = () => {
                   <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-8 h-8" />
                 </a>
                 <a 
-                  href="https://tiktok.com/@drapriscilacostaoficial" 
+                  href="https://www.tiktok.com/@drapriscilacosta" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform"

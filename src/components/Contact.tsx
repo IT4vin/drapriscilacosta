@@ -130,7 +130,7 @@ Mensagem: ${formData.mensagem}`;
                   <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-10 h-10" />
                 </a>
                 <a 
-                  href="https://tiktok.com/@drapriscilacostaoficial" 
+                  href="https://www.tiktok.com/@drapriscilacosta" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"

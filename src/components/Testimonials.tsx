@@ -191,6 +191,40 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
+
+        {/* Social Media section */}
+        <div className="mt-16 animate-on-scroll">
+          <div className="bg-white p-8 rounded-3xl shadow-xl max-w-2xl mx-auto text-center">
+            <h3 className="text-2xl font-elegante font-bold text-gray-800 mb-4">
+              Siga-nos nas redes sociais
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Acompanhe nosso dia a dia e veja mais resultados incríveis
+            </p>
+            
+            <div className="flex justify-center gap-6">
+              <a 
+                href="https://www.instagram.com/drapriscilacostahof" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-gradient-to-r from-pink-50 to-rose-50 hover:from-pink-100 hover:to-rose-100 px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              >
+                <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-8 h-8" />
+                <span className="font-medium text-gray-800">Instagram</span>
+              </a>
+              
+              <a 
+                href="https://www.tiktok.com/@drapriscilacosta" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              >
+                <img src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-8 h-8" />
+                <span className="font-medium text-gray-800">TikTok</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
