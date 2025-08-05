@@ -69,7 +69,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a 
-                href="https://wa.me/5521995772875?text=Olá, gostaria de agendar minha avaliação gratuita"
+                href="https://wa.me/5521995772875?text=Olá, gostaria de agendar minha avaliação"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-8 py-4 rounded-full hover:from-gold-600 hover:to-gold-700 transition-all duration-300 font-semibold text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
