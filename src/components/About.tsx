@@ -44,7 +44,7 @@ const About = () => {
                 <div className="w-2 h-2 bg-gold-500 rounded-full mt-2"></div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Formação Odontológica</h4>
-                  <p className="text-gray-600">Graduada em Odontologia pela Universidade Federal Fluminense UFF. Especialista em Cabeça e Pescoço na are de Harmonização Facial.</p>
+                  <p className="text-gray-600">Graduada em Odontologia pela Universidade Federal Fluminense UFF. Especialista em Cabeça e Pescoço na área de Harmonização Facial.</p>
                 </div>
               </div>
               
