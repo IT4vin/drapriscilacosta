@@ -25,8 +25,8 @@ const BeforeAfter = () => {
       procedure: 'Rinomodelação',
       category: 'harmonizacao',
       sectionId: 'rinomodelacao',
-      before: '/antes-depois/mandibula e rinomodelação.svg',
-      after: '/antes-depois/mandibula e rinomodelação.svg'
+      before: '/antes-depois/Rinomodelação.svg',
+      after: '/antes-depois/Rinomodelação.svg'
     },
     {
       id: 4,
@@ -90,16 +90,16 @@ const BeforeAfter = () => {
       procedure: 'Bioestimulador',
       category: 'outros',
       sectionId: 'bioestimulador',
-      before: '/imagens/Dourado - Bioestimulador.svg',
-      after: '/imagens/Dourado - Bioestimulador.svg'
+      before: '/antes-depois/Bioestimulador.svg',
+      after: '/antes-depois/Bioestimulador.svg'
     },
     {
       id: 12,
       procedure: 'Fios de PDO',
       category: 'outros',
       sectionId: 'fios-pdo',
-      before: '/imagens/Dourado - Fios de PDO.svg',
-      after: '/imagens/Dourado - Fios de PDO.svg'
+      before: '/antes-depois/Fios de PDO.svg',
+      after: '/antes-depois/Fios de PDO.svg'
     },
     {
       id: 13,
