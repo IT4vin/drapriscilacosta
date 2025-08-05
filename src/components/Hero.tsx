@@ -74,7 +74,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-8 py-4 rounded-full hover:from-gold-600 hover:to-gold-700 transition-all duration-300 font-semibold text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
-                📅 Avaliação Gratuita
+                📅 Agendar Avaliação
               </a>
               
               <button 
