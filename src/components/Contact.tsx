@@ -63,7 +63,7 @@ Mensagem: ${formData.mensagem}`;
                     Campo Grande Office & Mall<br />
                     Estr. da Cachamorra, 350<br />
                     Campo Grande, Rio de Janeiro - RJ<br />
-                    CEP: 23040-150
+                    CEP: 23040-150 - Bloco 3B - Sala 462
                   </p>
                 </div>
               </div>
@@ -258,7 +258,7 @@ Mensagem: ${formData.mensagem}`;
             <div className="mt-6 text-center">
               <p className="text-gray-600 mb-4">
                 <strong>Endereço:</strong> Campo Grande Office & Mall<br />
-                Estr. da Cachamorra, 350 - Campo Grande, Rio de Janeiro - RJ
+                Estr. da Cachamorra, 350 - Campo Grande, Rio de Janeiro - RJ - Bloco 3B - Sala 462
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a

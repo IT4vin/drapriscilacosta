@@ -35,7 +35,7 @@ const About = () => {
             </div>
 
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Médica especialista em harmonização facial e procedimentos estéticos, com mais de 
+              Doutora especialista em cirurgia orofacial e procedimentos estéticos, com mais de 
               16 anos de experiência dedicados à arte de realçar a beleza natural dos pacientes.
             </p>
 
@@ -43,8 +43,8 @@ const About = () => {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-gold-500 rounded-full mt-2"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Formação Médica Sólida</h4>
-                  <p className="text-gray-600">Graduada em Medicina pela Universidade Federal, com especialização em Dermatologia e Estética.</p>
+                  <h4 className="font-semibold text-gray-800">Formação Odontológica</h4>
+                  <p className="text-gray-600">Graduada em Odontologia pela Universidade Federal Fluminense UFF. Especialista em Cabeça e Pescoço na are de Harmonização Facial.</p>
                 </div>
               </div>
               

@@ -100,7 +100,7 @@ const Footer = () => {
                   Campo Grande Office & Mall<br />
                   Estr. da Cachamorra, 350<br />
                   Campo Grande, Rio de Janeiro - RJ<br />
-                  CEP: 23040-150
+                  CEP: 23040-150 - Bloco 3B - Sala 462
                 </p>
               </div>
               
