@@ -41,8 +41,8 @@ const BeforeAfter = () => {
       procedure: 'Bichectomia',
       category: 'cirurgia',
       sectionId: 'bichectomia',
-      before: '/imagens/Dourado - Bichectomia.svg',
-      after: '/imagens/Dourado - Bichectomia.svg'
+      before: '/antes-depois/Bichectomia.svg',
+      after: '/antes-depois/Bichectomia.svg'
     },
     {
       id: 6,
@@ -74,16 +74,16 @@ const BeforeAfter = () => {
       procedure: 'Queixo (Mento)',
       category: 'harmonizacao',
       sectionId: 'queixo-mento',
-      before: '/imagens/Dourado - Queixo Mento.svg',
-      after: '/imagens/Dourado - Queixo Mento.svg'
+      before: '/antes-depois/Queixo Mento.svg',
+      after: '/antes-depois/Queixo Mento.svg'
     },
     {
       id: 10,
       procedure: 'Top Model Look',
       category: 'outros',
       sectionId: 'top-model-look',
-      before: '/imagens/Dourado - Top Model Look.svg',
-      after: '/imagens/Dourado - Top Model Look.svg'
+      before: '/antes-depois/Top Model Look.svg',
+      after: '/antes-depois/Top Model Look.svg'
     },
     {
       id: 11,
@@ -106,8 +106,8 @@ const BeforeAfter = () => {
       procedure: 'Plastimoplastia',
       category: 'cirurgia',
       sectionId: 'plastimoplastia',
-      before: '/imagens/Dourado - Plastimoplastia.svg',
-      after: '/imagens/Dourado - Plastimoplastia.svg'
+      before: '/antes-depois/Plastimoplastia.svg',
+      after: '/antes-depois/Plastimoplastia.svg'
     }
   ];
 
