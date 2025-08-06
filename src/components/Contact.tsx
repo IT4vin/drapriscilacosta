@@ -93,8 +93,8 @@ Mensagem: ${formData.mensagem}`;
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">E-mail</h3>
                   <p className="text-gray-600">
-                    <a href="mailto:contato@priscilacosta.com.br" className="hover:text-rose-500 transition-colors">
-                      contato@priscilacosta.com.br
+                    <a href="mailto:priscilacosta.hof@gmail.com" className="hover:text-rose-500 transition-colors">
+                    priscilacosta.hof@gmail.com
                     </a>
                   </p>
                 </div>
