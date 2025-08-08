@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <img 
                 src="/imagens/logo.svg"
-                alt="Logo Priscila Costa"
+                alt="Logo Dra. Priscila Costa"
                 className="w-10 h-10 object-contain rounded-full"
               />
               <div>

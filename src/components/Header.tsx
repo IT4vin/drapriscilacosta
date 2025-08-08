@@ -59,7 +59,7 @@ const Header = () => {
               />
               <div>
                 <h1 className="text-xl font-elegante font-bold text-gray-800">
-                  Priscila Costa
+Dra. Priscila Costa
                 </h1>
                 <p className="text-xs text-gray-600">Harmonização Facial</p>
               </div>
