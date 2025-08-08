@@ -15,7 +15,7 @@ const Footer = () => {
                 className="w-10 h-10 object-contain rounded-full"
               />
               <div>
-                <h3 className="text-xl font-elegante font-bold">Consultório Priscila Costa</h3>
+                <h3 className="text-xl font-elegante font-bold">Consultório Dra. Priscila Costa</h3>
                 <p className="text-gray-400 text-sm">Harmonização Facial & Estética</p>
               </div>
             </div>
@@ -152,7 +152,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-gray-400">
-              <p>© {currentYear} Consultório Priscila Costa. Todos os direitos reservados.</p>
+              <p>© {currentYear} Consultório Dra. Priscila Costa. Todos os direitos reservados.</p>
             </div>
             
             <div className="flex gap-6 text-sm text-gray-400">
