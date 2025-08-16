@@ -195,7 +195,7 @@ Mensagem: ${formData.mensagem}`;
                     <option value="">Selecione um procedimento</option>
                     <option value="Harmonização Facial">Harmonização Facial</option>
                     <option value="Preenchimento Labial">Preenchimento Labial</option>
-                    <option value="Toxina Botulínica">Toxina Botulínica</option>
+                    <option value="Toxina Botulínica (Botox)">Toxina Botulínica (Botox)</option>
                     <option value="Rinomodelação">Rinomodelação</option>
                     <option value="Bichectomia">Bichectomia</option>
                     <option value="Lipo de Papada">Lipo de Papada</option>

@@ -19,7 +19,7 @@ const Testimonials = () => {
     {
       id: 3,
       name: "Juliana Santos",
-      procedure: "Toxina Botulínica",
+      procedure: "Toxina Botulínica (Botox)",
       rating: 5,
       text: "Excelente profissional! Muito cuidadosa, explicou todo o procedimento e o resultado foi exatamente o que eu esperava. Consultório impecável e atendimento humanizado.",
       image: '/Profile/profile.svg'

@@ -30,7 +30,7 @@ const BeforeAfter = () => {
     },
     {
       id: 4,
-      procedure: 'Toxina Botulínica',
+      procedure: 'Toxina Botulínica (Botox)',
       category: 'botox',
       sectionId: 'toxina-botulinica',
       before: '/antes-depois/Toxina Botulínica.svg',

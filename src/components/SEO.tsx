@@ -11,7 +11,7 @@ interface SEOProps {
 const SEO = ({ 
   title = "Consultório Dra.Priscila Costa - Harmonização Facial e Estética",
   description = "Transforme sua autoestima com a estética avançada de Priscila Costa. Especialista em harmonização facial, preenchimentos e procedimentos estéticos no Rio de Janeiro.",
-  keywords = "harmonização facial, preenchimento labial, toxina botulínica, estética facial, Priscila Costa, Rio de Janeiro, Campo Grande",
+  keywords = "harmonização facial, preenchimento labial, toxina botulínica (botox), estética facial, Priscila Costa, Rio de Janeiro, Campo Grande",
   image = "/imagens/logo2.svg"
 }: SEOProps) => {
   useEffect(() => {

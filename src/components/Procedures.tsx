@@ -14,7 +14,7 @@ const Procedures = () => {
   const outrosProcedimentos = [
     { name: "Top Model Look", desc: "Harmonização facial completa", image: "/imagens/Dourado - Top Model Look.svg", id: "top-model-look" },
     { name: "Bioestimulador", desc: "Estímulo natural do colágeno", image: "/imagens/Dourado - Bioestimulador.svg", id: "bioestimulador" },
-    { name: "Toxina Botulínica", desc: "Prevenção e suavização de rugas", image: "/imagens/Dourado - Toxina Botulinica.svg", id: "toxina-botulinica" },
+    { name: "Toxina Botulínica (Botox)", desc: "Prevenção e suavização de rugas", image: "/imagens/Dourado - Toxina Botulinica.svg", id: "toxina-botulinica" },
     { name: "Fios de PDO", desc: "Lifting facial sem cirurgia", image: "/imagens/Dourado - Fios de PDO.svg", id: "fios-pdo" }
   ];
 
