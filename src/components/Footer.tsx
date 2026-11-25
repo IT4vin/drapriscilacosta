@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Logo and info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img 
+              <LazyImage
                 src="/imagens/logo.webp"
                 alt="Logo Dra. Priscila Costa"
                 className="w-10 h-10 object-contain rounded-full"
@@ -133,7 +134,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform"
                 >
-                  <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-8 h-8" />
+                  <LazyImage src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-8 h-8" />
                 </a>
                 <a 
                   href="https://www.tiktok.com/@drapriscilacosta" 
@@ -141,7 +142,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform"
                 >
-                  <img src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-8 h-8" />
+                  <LazyImage src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-8 h-8" />
                 </a>
               </div>
             </div>

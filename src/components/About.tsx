@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage';
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
           {/* Image */}
           <div className="animate-on-scroll">
             <div className="relative w-full h-auto md:w-[400px] md:h-[600px] mx-auto">
-              <img 
+              <LazyImage
                 src="/imagens/priscilacosta2.webp"
                 srcSet="/imagens/priscilacosta2-640.webp 640w, /imagens/priscilacosta2.webp 1280w"
                 sizes="(min-width: 768px) 400px, 100vw"

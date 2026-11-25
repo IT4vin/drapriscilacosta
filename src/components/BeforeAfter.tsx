@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage';
 import { useState } from 'react';
 
 const BeforeAfter = () => {
@@ -134,7 +135,7 @@ const BeforeAfter = () => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="relative h-64 overflow-hidden">
-          <img 
+          <LazyImage
             src={result.before}
             loading="lazy"
             decoding="async"
@@ -143,7 +144,7 @@ const BeforeAfter = () => {
               isHovered ? 'opacity-0' : 'opacity-100'
             }`}
           />
-          <img 
+          <LazyImage
             src={result.after}
             loading="lazy"
             decoding="async"

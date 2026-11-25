@@ -1,3 +1,5 @@
+import LazyVideo from './LazyVideo';
+import LazyImage from './LazyImage';
 const Testimonials = () => {
   const testimonials = [
     {
@@ -68,7 +70,7 @@ const Testimonials = () => {
       
       {/* Patient info */}
       <div className="flex items-center">
-        <img 
+        <LazyImage
           src={testimonial.image}
           alt={testimonial.name}
           className="w-12 h-12 rounded-full object-cover mr-4"
@@ -108,7 +110,7 @@ const Testimonials = () => {
         <div className="text-center mt-16 animate-on-scroll">
           <div className="bg-white p-8 rounded-3xl shadow-xl max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-6">
-              <img 
+              <LazyImage
                 src='/google/google-logo.svg'
                 alt="Google"
                 className="w-8 h-8 mr-3"
@@ -156,7 +158,7 @@ const Testimonials = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="aspect-video bg-gray-900 relative">
-                <video 
+                <LazyVideo
                   className="w-full h-full object-cover rounded-t-2xl"
                   controls
                   preload="none"
@@ -164,7 +166,7 @@ const Testimonials = () => {
                 >
                   <source src="/Video/Video - consultorio.mp4" type="video/mp4" />
                   Seu navegador não suporta o elemento de vídeo.
-                </video>
+                </LazyVideo>
               </div>
               <div className="p-4">
                 <h4 className="font-semibold text-gray-800">Consultório - Dra. Priscila Costa</h4>
@@ -174,7 +176,7 @@ const Testimonials = () => {
             
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="aspect-video bg-gray-900 relative">
-                <video 
+                <LazyVideo
                   className="w-full h-full object-cover rounded-t-2xl"
                   controls
                   preload="none"
@@ -182,7 +184,7 @@ const Testimonials = () => {
                 >
                   <source src="/Video/Video - Lipo de Papada.mp4" type="video/mp4" />
                   Seu navegador não suporta o elemento de vídeo.
-                </video>
+                </LazyVideo>
               </div>
               <div className="p-4">
                 <h4 className="font-semibold text-gray-800">Lipo de Papada</h4>
@@ -209,7 +211,7 @@ const Testimonials = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-pink-50 to-rose-50 hover:from-pink-100 hover:to-rose-100 px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
               >
-                <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-8 h-8" />
+                <LazyImage src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-8 h-8" />
                 <span className="font-medium text-gray-800">Instagram</span>
               </a>
               
@@ -219,7 +221,7 @@ const Testimonials = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
               >
-                <img src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-8 h-8" />
+                <LazyImage src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-8 h-8" />
                 <span className="font-medium text-gray-800">TikTok</span>
               </a>
             </div>

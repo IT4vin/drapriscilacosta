@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage';
 
 import { useState } from 'react';
 
@@ -127,7 +128,7 @@ Mensagem: ${formData.mensagem}`;
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
                 >
-                  <img src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-10 h-10" />
+                  <LazyImage src="/Redes Sociais/instagram.svg" alt="Instagram" className="w-10 h-10" />
                 </a>
                 <a 
                   href="https://www.tiktok.com/@drapriscilacosta" 
@@ -135,7 +136,7 @@ Mensagem: ${formData.mensagem}`;
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
                 >
-                  <img src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-10 h-10" />
+                  <LazyImage src="/Redes Sociais/tiktok.svg" alt="TikTok" className="w-10 h-10" />
                 </a>
               </div>
             </div>

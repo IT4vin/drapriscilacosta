@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage';
 import styles from './Procedimentos.module.css';
 import { scrollToProcedureSection } from '../hooks/useScrollAnimation';
 
@@ -35,7 +36,7 @@ const Procedures = () => {
       onClick={() => scrollToSection(procedure.id)}
     >
       <div className="relative overflow-hidden">
-        <img 
+        <LazyImage
           src={procedure.image}
           loading="lazy"
           decoding="async"
