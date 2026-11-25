@@ -53,7 +53,7 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <img 
-                src="/imagens/logo.svg"
+                src="/imagens/logo.webp"
                 alt="Logo Dra. Priscila Costa"
                 className="w-10 h-10 object-contain rounded-full"
               />

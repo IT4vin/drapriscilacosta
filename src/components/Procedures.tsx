@@ -3,25 +3,25 @@ import { scrollToProcedureSection } from '../hooks/useScrollAnimation';
 
 const Procedures = () => {
   const harmonizacaoFacial = [
-    { name: "Preenchimento Labial", desc: "Lábios mais volumosos e definidos", image: "/imagens/Dourado - Preenchimento Labial.svg", id: "preenchimento-labial" },
-    { name: "Bigode Chinês", desc: "Suavização de linhas de expressão", image: "/imagens/Dourado - Bigode Chines.svg", id: "bigode-chines" },
-    { name: "Olheira", desc: "Tratamento para olheiras e bolsas", image: "/imagens/Dourado - Olheira.svg", id: "olheira" },
-    { name: "Mandíbula", desc: "Definição e contorno mandibular", image: "/imagens/Dourado - Mandibula.svg", id: "mandibula" },
-    { name: "Queixo (Mento)", desc: "Projeção e harmonização do queixo", image: "/imagens/Dourado - Queixo Mento.svg", id: "queixo-mento" },
-    { name: "Rinomodelação", desc: "Correção nasal sem cirurgia", image: "/imagens/Dourado - Rinomodelação.svg", id: "rinomodelacao" }
+    { name: "Preenchimento Labial", desc: "Lábios mais volumosos e definidos", image: "/imagens/Dourado - Preenchimento Labial.webp", id: "preenchimento-labial" },
+    { name: "Bigode Chinês", desc: "Suavização de linhas de expressão", image: "/imagens/Dourado - Bigode Chines.webp", id: "bigode-chines" },
+    { name: "Olheira", desc: "Tratamento para olheiras e bolsas", image: "/imagens/Dourado - Olheira.webp", id: "olheira" },
+    { name: "Mandíbula", desc: "Definição e contorno mandibular", image: "/imagens/Dourado - Mandibula.webp", id: "mandibula" },
+    { name: "Queixo (Mento)", desc: "Projeção e harmonização do queixo", image: "/imagens/Dourado - Queixo Mento.webp", id: "queixo-mento" },
+    { name: "Rinomodelação", desc: "Correção nasal sem cirurgia", image: "/imagens/Dourado - Rinomodelação.webp", id: "rinomodelacao" }
   ];
 
   const outrosProcedimentos = [
-    { name: "Top Model Look", desc: "Harmonização facial completa", image: "/imagens/Dourado - Top Model Look.svg", id: "top-model-look" },
-    { name: "Bioestimulador", desc: "Estímulo natural do colágeno", image: "/imagens/Dourado - Bioestimulador.svg", id: "bioestimulador" },
-    { name: "Toxina Botulínica (Botox)", desc: "Prevenção e suavização de rugas", image: "/imagens/Dourado - Toxina Botulinica.svg", id: "toxina-botulinica" },
-    { name: "Fios de PDO", desc: "Lifting facial sem cirurgia", image: "/imagens/Dourado - Fios de PDO.svg", id: "fios-pdo" }
+    { name: "Top Model Look", desc: "Harmonização facial completa", image: "/imagens/Dourado - Top Model Look.webp", id: "top-model-look" },
+    { name: "Bioestimulador", desc: "Estímulo natural do colágeno", image: "/imagens/Dourado - Bioestimulador.webp", id: "bioestimulador" },
+    { name: "Toxina Botulínica (Botox)", desc: "Prevenção e suavização de rugas", image: "/imagens/Dourado - Toxina Botulinica.webp", id: "toxina-botulinica" },
+    { name: "Fios de PDO", desc: "Lifting facial sem cirurgia", image: "/imagens/Dourado - Fios de PDO.webp", id: "fios-pdo" }
   ];
 
   const cirurgias = [
     { name: "Lipo de Papada", desc: "Remoção de gordura localizada", image: "/imagens/Dourado - Lipo de Papada.svg", id: "lipo-papada" },
-    { name: "Bichectomia", desc: "Afinamento do rosto", image: "/imagens/Dourado - Bichectomia.svg", id: "bichectomia" },
-    { name: "Plastimoplastia", desc: "Rejuvenescimento com enxertia", image: "/imagens/Dourado - Plastimoplastia.svg", id: "plastimoplastia" }
+    { name: "Bichectomia", desc: "Afinamento do rosto", image: "/imagens/Dourado - Bichectomia.webp", id: "bichectomia" },
+    { name: "Plastimoplastia", desc: "Rejuvenescimento com enxertia", image: "/imagens/Dourado - Plastimoplastia.webp", id: "plastimoplastia" }
   ];
 
   // Função para rolar suavemente até a seção correspondente
@@ -37,6 +37,8 @@ const Procedures = () => {
       <div className="relative overflow-hidden">
         <img 
           src={procedure.image}
+          loading="lazy"
+          decoding="async"
           alt={procedure.name}
           className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
         />

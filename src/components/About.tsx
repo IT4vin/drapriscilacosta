@@ -8,7 +8,12 @@ const About = () => {
           <div className="animate-on-scroll">
             <div className="relative w-full h-auto md:w-[400px] md:h-[600px] mx-auto">
               <img 
-                src="/imagens/priscilacosta2.svg"
+                src="/imagens/priscilacosta2.webp"
+                srcSet="/imagens/priscilacosta2-640.webp 640w, /imagens/priscilacosta2.webp 1280w"
+                sizes="(min-width: 768px) 400px, 100vw"
+                width={1280}
+                height={1994}
+                loading="lazy"
                 alt="Dra. Priscila Costa em seu consultório"
                 className="w-full h-auto md:w-full md:h-full object-cover rounded-3xl shadow-xl"
                 style={{ objectPosition: 'center top' }}

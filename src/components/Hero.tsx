@@ -94,7 +94,12 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-gold-400/20 to-neutral-400/20 rounded-3xl transform rotate-6"></div>
               <img 
-                src="/imagens/priscilacosta.svg"
+                src="/imagens/priscilacosta.webp"
+                srcSet="/imagens/priscilacosta-640.webp 640w, /imagens/priscilacosta.webp 1280w"
+                sizes="(min-width: 1400px) 660px, (min-width: 1024px) 47vw, 100vw"
+                width={1280}
+                height={1994}
+                fetchPriority="high"
                 alt="Dra. Priscila Costa"
                 className="w-full h-96 md:h-[500px] object-cover rounded-3xl shadow-2xl relative z-10"
               />

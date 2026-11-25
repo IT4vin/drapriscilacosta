@@ -136,6 +136,8 @@ const BeforeAfter = () => {
         <div className="relative h-64 overflow-hidden">
           <img 
             src={result.before}
+            loading="lazy"
+            decoding="async"
             alt={`${result.procedure} - Antes`}
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
               isHovered ? 'opacity-0' : 'opacity-100'
@@ -143,6 +145,8 @@ const BeforeAfter = () => {
           />
           <img 
             src={result.after}
+            loading="lazy"
+            decoding="async"
             alt={`${result.procedure} - Depois`}
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
               isHovered ? 'opacity-100' : 'opacity-0'

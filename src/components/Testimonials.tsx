@@ -159,8 +159,8 @@ const Testimonials = () => {
                 <video 
                   className="w-full h-full object-cover rounded-t-2xl"
                   controls
-                  preload="metadata"
-                  poster="/imagens/logo2.svg"
+                  preload="none"
+                  poster="/imagens/logo2.webp"
                 >
                   <source src="/Video/Video - consultorio.mp4" type="video/mp4" />
                   Seu navegador não suporta o elemento de vídeo.
@@ -177,7 +177,7 @@ const Testimonials = () => {
                 <video 
                   className="w-full h-full object-cover rounded-t-2xl"
                   controls
-                  preload="metadata"
+                  preload="none"
                   poster="/antes-depois/lipo de papada.svg"
                 >
                   <source src="/Video/Video - Lipo de Papada.mp4" type="video/mp4" />
